@@ -1,0 +1,7 @@
+services:
+  app:
+    context: ./
+    primary: true
+    exposePort: 80
+  database:
+    image: voyageapp/postgres:14.2
