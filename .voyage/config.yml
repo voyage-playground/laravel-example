@@ -6,5 +6,7 @@ services:
     environment:
       - name: APP_ENV
         value: voyage
+      - name: APP_URL
+        value: "https://${VOYAGE_SERVICE_APP_URL}"
   database:
     image: voyageapp/postgres:14.2
