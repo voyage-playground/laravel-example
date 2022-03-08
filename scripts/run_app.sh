@@ -17,3 +17,5 @@ echo "🚀 Generate App Key"
 php artisan key:generate --force
 
 php artisan migrate
+
+php artisan db:seed

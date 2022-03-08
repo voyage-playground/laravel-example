@@ -11,6 +11,8 @@ services:
             - "8002:80"
         volumes:
             - ./:/app
+            - /app/vendor
+            - /app/node_modules
 
     database:
         image: voyageapp/postgres:14.2
