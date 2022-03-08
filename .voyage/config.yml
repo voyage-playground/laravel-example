@@ -3,5 +3,8 @@ services:
     context: ./
     primary: true
     exposePort: 80
+    environment:
+      - name: APP_ENV
+        value: voyage
   database:
     image: voyageapp/postgres:14.2
