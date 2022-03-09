@@ -10,6 +10,11 @@ if [ "$APP_ENV" == "development" ] || [ "$APP_ENV" == "local" ] || [ -n "$RUNNIN
   dockerize -wait $DB_HOSTNAME -timeout 60s
 fi
 
+cat >/app/.env <<EOL
+APP_NAME=Voyage
+APP_KEY=
+EOL
+
 echo "🚀 Dump Autoloader"
 composer dumpautoload
 
